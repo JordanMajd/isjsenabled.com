@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Is JS Enabled?</title>
+  <meta name="description" content="Quickly check to see if javascript is enabled or disabled in your browser.">
+  <meta name="author" content="Jordan Majd">
+</head>
+<body>
+    <h1 id="status">Javascript is disabled in your browser</h1>
+    <noscript>This should only show if JS is disabled</noscript>
+    <script>
+        (function(){
+            'use strict';
+            var status = document.getElementById('status');
+            status.innerHTML = 'Javascript is enabled in your browser';
+        })();
+    </script>
+</body>
+</html>
