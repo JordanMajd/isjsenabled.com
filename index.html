@@ -5,8 +5,13 @@
   <title>Is JS Enabled?</title>
   <meta name="description" content="Quickly check to see if javascript is enabled or disabled in your browser.">
   <meta name="author" content="Jordan Majd">
+  <style>
+        body {
+            
+        }
+    </style>
 </head>
-<body>
+<body id="body" style="background-color:red">
     <h1 id="status">Javascript is disabled in your browser</h1>
     <noscript>This should only show if JS is disabled</noscript>
     <script>
@@ -14,6 +19,9 @@
             'use strict';
             var status = document.getElementById('status');
             status.innerHTML = 'Javascript is enabled in your browser';
+
+            var body =  document.getElementById('body');
+            body.setAttribute('style', 'background-color:green');
         })();
     </script>
 </body>
