@@ -4,7 +4,9 @@
 
 Quickly check if javascript is enabled or disabled in your browser.
 
-The site was tested using FF extension I wrote called [Script Switch](https://github.com/JordanMajd/script_switch), however the most reliable way to disable your Javascript is in your browser settings:
+![Gif testing functionality of is javascript enabled](/img/is_js_enabled.gif)
+
+The site was tested using FF extension I wrote, [Script Switch](https://github.com/JordanMajd/script_switch). However, the most reliable way to disable Javascript is through the browser settings:
 
 - Firefox: open up `about:config` and search for `javascript.enabled` and set it to `false`.
 - Chrome:  navigate to `chrome://settings/content/javascript` and set the `Blocked` switch to off.
