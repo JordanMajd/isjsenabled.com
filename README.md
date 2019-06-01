@@ -1,8 +1,7 @@
-# isjsenabled.com ![Version 1.0](https://img.shields.io/badge/Version-1.0-green.svg)
+# isjsenabled.com
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE) ![Version 1.0](https://img.shields.io/badge/Version-1.0-green.svg)
 
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-Quickly check if javascript is enabled or disabled in your browser.
+A website to quickly check if javascript is enabled or disabled in a browser. Can be found live at [isjsenabled.com](http://isjsenabled.com).
 
 ![Gif testing functionality of is javascript enabled](/img/is_js_enabled.gif)
 
