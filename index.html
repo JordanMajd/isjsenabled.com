@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <title>Is JS Enabled?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Check if javascript is enabled or disabled in your browser.">
     <meta name="author" content="Jordan Majd">
     <style>
@@ -17,22 +18,25 @@
         a {
             color:#262626;
         }
-        nav {
+        header {
             background-color: #ba6b6c;
             height: 50px;
         }
-        nav #nav-highlight {
+        header #head-highlight {
             background-color: #ef9a9a;
             height: 10px;
         }
-        nav #nav-container {
+        header #head-container {
             margin: auto;
-            padding-top: 10px;
             width:  80vw;
         }
-        nav a {
+        header a {
             text-decoration: none;
             font-size: 1.35rem;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 100;
         }
         #status-container {
             position: absolute;
@@ -46,14 +50,37 @@
         #status-img {
             width:  20vw;
         }
+        #status-text {
+            font-size: 2rem;
+            margin-top: 21px;
+            margin-bottom: 21px;
+            display:block;
+        }
         footer {
             position: absolute;
             bottom: 2%;
             left: 50%;
             transform: translate(-50%, 0%);
+            max-width: 90%;
             text-align: center;
-            font-size: 0.75rem;   
+            font-size: 0.75rem;  
+            line-height: 1rem; 
         }
+        @media only screen and (max-width: 768px) {
+            #status-container {
+                width: 90vw;
+            }
+            #status-img {
+                width:  40vw;
+            }
+            #status-text {
+                font-size: 1.5rem;
+            }
+            footer {
+                width: 100%;
+            }
+        }
+
     </style>
     <!-- Hail Satanalytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59781126-4"></script>
@@ -65,17 +92,15 @@
     </script>
 </head>
 <body id="body">
-    <nav id="nav">
-        <div id="nav-highlight"></div>
-        <div id="nav-container">
-            <div>
-                <a href="/"><span>is js enabled</span></a>
-            </div>
+    <header id="head">
+        <div id="head-highlight"></div>
+        <div id="head-container">
+            <h1><a href="/">is js enabled</a></h1>
         </div>
-    </nav>
+    </header>
     <div id="status-container">
         <img id="status-img" src="./img/contrast_primary_red.svg" alt="Picture of a browser window.">
-        <h1 id="status">Javascript is disabled in your browser.</h1>
+        <strong id="status-text">Javascript is <b id="status">disabled</b> in your browser.</strong>
         <noscript>This text is in a &lt;noscript&gt; tag and should display if JS is disabled.</noscript>
     </div>
     <footer>
@@ -83,7 +108,7 @@
             <Span>Thanks for testing if js is enabled, <a href="https://github.com/JordanMajd/isjsenabled.com">learn more on github</a>.</Span>
         </div>
         <div>
-            Copyright &copy; 2019 <a href="https://twitter.com/jordanmajd">Jordan Majd</a>
+            Copyright &copy;2019 <a href="https://twitter.com/jordanmajd">Jordan Majd</a>
         </div>
     </footer>
     <script>
@@ -91,18 +116,18 @@
             'use strict';
 
             var status = document.getElementById('status');
-            var statusText = document.createTextNode("Javascript is enabled in your browser.");
+            var statusText = document.createTextNode("enabled");
             status.removeChild(status.firstChild);
             status.appendChild(statusText);
 
             var statusImg = document.getElementById('status-img');
             statusImg.src = './img/contrast_primary_green.svg';
 
-            var navHighlight = document.getElementById('nav-highlight');
-            navHighlight.style.backgroundColor = '#a5d6a7';
+            var headHighlight = document.getElementById('head-highlight');
+            headHighlight.style.backgroundColor = '#a5d6a7';
             
-            var nav = document.getElementById('nav');
-            nav.style.backgroundColor = '#75a478';
+            var header = document.getElementById('head');
+            header.style.backgroundColor = '#75a478';
         })();
     </script>
 </body>
