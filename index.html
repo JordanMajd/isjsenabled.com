@@ -46,9 +46,6 @@
         #status-img {
             width:  20vw;
         }
-        #status-enabled {
-            display: none;
-        }
         footer {
             position: absolute;
             bottom: 2%;
@@ -78,8 +75,7 @@
     </nav>
     <div id="status-container">
         <img id="status-img" src="./img/contrast_primary_red.svg" alt="Picture of a browser window.">
-        <h1 id="status-disabled">Javascript is disabled in your browser.</h1>
-        <h1 id="status-enabled">Javascript is enabled in your browser.</h1>
+        <h1 id="status">Javascript is disabled in your browser.</h1>
         <noscript>This text is in a &lt;noscript&gt; tag and should display if JS is disabled.</noscript>
     </div>
     <footer>
@@ -94,20 +90,19 @@
         (function(){
             'use strict';
 
-            var status = document.getElementById('status-disabled');
-            status.setAttribute('style', 'display:none');
-
-            var status = document.getElementById('status-enabled');
-            status.setAttribute('style', 'display:block');
+            var status = document.getElementById('status');
+            var statusText = document.createTextNode("Javascript is enabled in your browser.");
+            status.removeChild(status.firstChild);
+            status.appendChild(statusText);
 
             var statusImg = document.getElementById('status-img');
-            statusImg.setAttribute('src', './img/contrast_primary_green.svg')
+            statusImg.src = './img/contrast_primary_green.svg';
 
             var navHighlight = document.getElementById('nav-highlight');
-            navHighlight.setAttribute('style', 'background-color:#a5d6a7'); // primary
+            navHighlight.style.backgroundColor = '#a5d6a7';
             
             var nav = document.getElementById('nav');
-            nav.setAttribute('style', 'background-color:#75a478'); // dark
+            nav.style.backgroundColor = '#75a478';
         })();
     </script>
 </body>
