@@ -5,7 +5,7 @@
 
 The tool was original built to validate an FF extension I wrote, [Script Switch](https://github.com/JordanMajd/script_switch).
 
-However, the Ssimplest way to disable Javascript is through the browser settings:
+However, the simplest way to disable Javascript is through the browser settings:
 
 - Firefox: open up `about:config` and search for `javascript.enabled` and set it to `false`.
 - Chrome:  navigate to `chrome://settings/content/javascript` and set the `Blocked` switch to off.
