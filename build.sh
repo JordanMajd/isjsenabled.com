@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # create dir if doesn't exist
-mkdir -p docs
+mkdir -p docs/img
 
 # minify
 # requires: npm install html-minifier -g
@@ -18,7 +18,7 @@ html-minifier \
     index.html > ./docs/index.html
 
 # copy assets
-cp -R img docs/img
+cp img/* docs/img/
 cp favicon.ico ./docs/
 cp CNAME ./docs/
 cp robots.txt ./docs/
