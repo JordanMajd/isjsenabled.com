@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Is JS Enabled? A Tool to Test If Javascript Is Enabled.</title>
+    <title>Is JS Enabled?</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Is JS Enabled? Check if Javascript is enabled or disabled in your browser.">
+    <meta name="description" content="Check if Javascript is enabled in your browser.">
     <meta name="author" content="Jordan Majd">
     <link rel="canonical" href="https://isjsenabled.com/" />
     <style>
@@ -100,17 +100,17 @@
     <header id="head">
         <div id="head-highlight"></div>
         <div id="head-container">
-            <h1><a href="/">is js enabled</a></h1>
+            <h1><a href="/">is js enabled?</a></h1>
         </div>
     </header>
     <div id="status-container">
-        <img id="status-img" src="./img/js_is_disabled.svg" alt="Picture of a red browser window, indicating Javascript is disabled.">
+        <img id="status-img" src="./img/js_is_disabled.svg" alt="Picture of a red browser window.">
         <strong id="status-text">Javascript is <b id="status">disabled</b> in your browser.</strong>
         <noscript>This text is in a &lt;noscript&gt; tag and should display if JS is disabled.</noscript>
     </div>
     <footer>
         <div>
-            <Span>Thanks for testing if js is enabled, <a href="https://github.com/JordanMajd/isjsenabled.com">learn more on github</a>.</Span>
+            <Span><a href="https://github.com/JordanMajd/isjsenabled.com">Learn more on github</a>.</Span>
         </div>
         <div>
             Copyright &copy;2019 <a href="https://twitter.com/jordanmajd">Jordan Majd</a>
@@ -127,7 +127,6 @@
 
             var statusImg = document.getElementById('status-img');
             statusImg.src = './img/js_is_enabled.svg';
-            statusImg.alt = statusImg.alt.replace('red', 'green').replace('disabled', 'enabled');
 
             var headHighlight = document.getElementById('head-highlight');
             headHighlight.style.backgroundColor = '#a5d6a7';
