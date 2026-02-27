@@ -1,0 +1,11 @@
+{
+  "name": "isjsenabled.com",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": ""
+  },
+  "devDependencies": {
+    "html-minifier": "^4.0.0"
+  }
+}

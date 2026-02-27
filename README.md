@@ -1,7 +1,7 @@
 # isjsenabled.com
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE) ![Version 1.0](https://img.shields.io/badge/Version-1.0-green.svg)
 
-[isjsenabled.com](http://isjsenabled.com) is website to test if javascript is enabled or disabled in a browser.
+[isjsenabled.jordanmajd.com](http://isjsenabled.jordanmajd.com) is website to test if javascript is enabled or disabled in a browser.
 
 The tool was original built to validate an FF extension I wrote, [Script Switch](https://github.com/JordanMajd/script_switch).
 

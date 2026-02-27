@@ -4,8 +4,7 @@
 mkdir -p docs/img
 
 # minify
-# requires: npm install html-minifier -g
-html-minifier \
+bun run html-minifier \
     --collapse-whitespace \
     --remove-comments \
     --remove-optional-tags \
